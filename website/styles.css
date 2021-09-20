@@ -20,10 +20,6 @@ body {
 }
 
 .content {
-  display: flex;
-  justify-content: center;
-  flex-flow: column;
-
   box-shadow: 10px 10px 120px -40px rgba(0,0,0,0.60);
   border-radius: 20px;
 
@@ -34,7 +30,7 @@ body {
 .title {
     font-family: 'Poppins', sans-serif;
     font-size: 3em;
-    margin: 0 0 1em 1em;
+    margin: .4em 0 0 .8em; /*top - bottom - right - left */
 }
 
 .text {
@@ -45,4 +41,10 @@ body {
     display: flex;
     justify-content: center;
     flex-flow: column;
+
+    margin: 1em 0 0 3em;
+}
+
+.option {
+  
 }
