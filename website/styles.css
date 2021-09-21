@@ -33,26 +33,23 @@ body {
   margin: 0.4em 0 0 0.8em; /*top - bottom - right - left */
 }
 
-.text {
-  font-family: "Montserrat", sans-serif;
-}
-
 .options {
   display: flex;
   flex-flow: column nowrap;
-  margin: 1em 0 0 3em;
+  margin: 0 0 0 3em;
 }
 
 .option {
+  margin: -5px 0;
+}
+
+.option label {
   display: flex;
-  flex-flow: row nowrap;
-  margin: 8px 0;
+  flex-flow: row;
+  align-items: center;
 }
-
-.option input {
-  margin-block: auto;
-}
-
 .option p {
-  margin-left: 10px;
+  margin-left: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
 }
