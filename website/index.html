@@ -13,32 +13,35 @@
 <body>
     <div class="content">
         <form action="">
-        <div class="title" onclick="genera()">Create</div>
-        <div class="options">
-            <div class="option">
-                <label class="switch">
-                    <input type="checkbox" name="preferences" id="uppercase"/>
-                    <p>Uppercase</p>
-                </label>
+            <div class="title" onclick="genera()">Create</div>
+            <div class="preferences">
+                <div class="options">
+                    <div class="option">
+                        <label class="switch">
+                            <input type="checkbox" name="preferences" id="uppercase" />
+                            <p>Uppercase</p>
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label class="switch">
+                            <input type="checkbox" name="preferences" id="lowercase" />
+                            <p>Lowercase</p>
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label class="switch">
+                            <input type="checkbox" name="preferences" id="numbers" />
+                            <p>Numbers</p>
+                        </label>
+                    </div>
+                </div>
+                <div class="len"><p>Lenght:</p><input type="number" name="psw-len" id="psw-len" min="1" max="20"></div>
             </div>
-            <div class="option">
-                <label class="switch">
-                    <input type="checkbox" name="preferences" id="lowercase" />
-                    <p>Lowercase</p>
-                </label>
+            <div class="result">
+                <p id="resultp">test</p>
+                <button id="btn-copy" onclick="copia()"><img src="images/icon1.png" alt="C"></button>
             </div>
-            <div class="option">
-                <label class="switch">
-                    <input type="checkbox" name="preferences" id="numbers" />
-                    <p>Numbers</p>
-                </label>
-            </div>
-            <div class="len"><input type="number" name="psw-len" id="psw-len" min="1" max="20"></div>
-        </div>
-        <div class="result">
-            <p id="resultp"></p>
-        </div>
-    </form>
+        </form>
     </div>
 </body>
 

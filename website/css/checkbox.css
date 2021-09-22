@@ -39,7 +39,7 @@ input[type="radio"][type="checkbox"]:before,
 input[type="checkbox"][type="checkbox"]:before {
   width: 200%;
   background-color: var(--background-color); /* sfondo */
-  box-shadow: 0 0 0 2px #000000;
+  box-shadow: 0 0 0 2px var(--primary-color);
   transform: translate(-25%, 0);
   border-radius: 30px;
 }
@@ -49,13 +49,14 @@ input[type="checkbox"][type="checkbox"]:after {
   height: 80%;
   margin-top: 10%;
   margin-left: 10%;
-  background-color: #000000; /* pallina */
+  background-color: var(--secondary-color); /* pallina */
   border-radius: 30px;
   transform: translate(-60%, 0);
 }
 input[type="radio"][type="checkbox"]:checked:after,
 input[type="checkbox"][type="checkbox"]:checked:after {
   transform: translate(60%, 0);
+  background-color: var(--primary-color); /* pallina */
 }
 input[type="radio"],
 input[type="checkbox"] {

@@ -3,8 +3,8 @@
 
 :root {
   --background-color: #e9e9e9;
-  --primary-color: #125d98;
-  --secondary-color: #3c8dad;
+  --primary-color: #000000;
+  --secondary-color: #222222;
 }
 
 html,
@@ -29,7 +29,16 @@ body {
 .title {
   font-family: "Poppins", sans-serif;
   font-size: 3em;
-  margin: 0.4em 0 0 0.8em; /*top - bottom - right - left */
+  margin: 0.4em 0 0 0.8em; /*top - right - bottom - left */
+  color: var(--primary-color);
+}
+
+.preferences {
+display: flex;
+flex-flow: row nowrap;
+
+font-family: "Montserrat", sans-serif;
+  font-weight: 600;
 }
 
 .options {
@@ -47,14 +56,69 @@ body {
   flex-flow: row;
   align-items: center;
 }
+
 .option p {
   margin-left: 20px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
+  color: var(--secondary-color);
 }
 
 .result {
-  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border: 2px solid var(--primary-color);
   border-radius: 10px;
-  margin: 20px 50px;
+  margin: 20px 40px;
+}
+
+.result img {
+  color: var(--background-color)
+}
+
+#resultp {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  text-align: left;
+  padding: 0 0 0 1em;
+  color: var(--secondary-color);
+}
+
+#btn-copy {
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  margin: 0 7px 0 0;
+  color: var(--background-color);
+  font-weight: 600;
+  font-size: 1.8em;
+}
+
+.len {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  margin: -2em 0 0 0;
+  color: var(--secondary-color);
+}
+
+.len input {
+  height: 40px;
+  width: 60px;
+  border: 2px solid var(--primary-color);
+  margin: -1em 0 0 0;
+  border-radius: 3px;
+  background-color: var(--background-color);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+
+.len input[type=number]::-webkit-inner-spin-button, 
+.len input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
 }
