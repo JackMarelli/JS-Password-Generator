@@ -1,3 +1,9 @@
+:root {
+  --background-color: #e9e9e9;
+  --primary-color: #125d98;
+  --secondary-color: #3c8dad;
+}
+
 input[type="radio"]:after,
 input[type="checkbox"][type="radio"]:after,
 input[type="checkbox"]:after {
@@ -32,7 +38,7 @@ input[type="checkbox"][type="radio"] {
 input[type="radio"][type="checkbox"]:before,
 input[type="checkbox"][type="checkbox"]:before {
   width: 200%;
-  background-color: #c9c9c9; /* sfondo */
+  background-color: var(--background-color); /* sfondo */
   box-shadow: 0 0 0 2px #000000;
   transform: translate(-25%, 0);
   border-radius: 30px;
@@ -45,11 +51,11 @@ input[type="checkbox"][type="checkbox"]:after {
   margin-left: 10%;
   background-color: #000000; /* pallina */
   border-radius: 30px;
-  transform: translate(60%, 0);
+  transform: translate(-60%, 0);
 }
 input[type="radio"][type="checkbox"]:checked:after,
 input[type="checkbox"][type="checkbox"]:checked:after {
-  transform: translate(-60%, 0);
+  transform: translate(60%, 0);
 }
 input[type="radio"],
 input[type="checkbox"] {
