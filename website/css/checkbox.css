@@ -1,13 +1,13 @@
 input[type="radio"]:after,
 input[type="checkbox"][type="radio"]:after,
 input[type="checkbox"]:after {
-  transition: all 0.25s ease;
+  transition: all 0.2s ease;
 }
 
 input[type="radio"]:before,
 input[type="checkbox"][type="radio"]:before,
 input[type="checkbox"]:before {
-  transition: all 0.25s ease-in-out;
+  transition: all 0.2s ease;
 }
 
 input[type="radio"],
